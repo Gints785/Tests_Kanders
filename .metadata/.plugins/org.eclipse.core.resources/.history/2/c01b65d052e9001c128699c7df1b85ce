@@ -40,7 +40,7 @@ public class Programma {
 			    }
 			    else {
 			    	JOptionPane.showMessageDialog( null, "Nepareizi");
-			    	
+			    	JOptionPane.showMessageDialog( null, "Nepareizi");
 			    }
 		
 	}
