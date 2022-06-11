@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\Gints\eclipse-workspace\Tests_tekstaDatnes\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2937166335.index
+3742190952.index
