@@ -13,7 +13,7 @@ public class Programma {
 	public static void main(String[] args) {
 		
 		int p = 0,n = 0,a=0;
-		
+		String atbilde;
 		
 		try {
 		      File myObj = new File("Atbildes.txt");
@@ -27,38 +27,35 @@ public class Programma {
 		      e.printStackTrace();
 		    }
 		
-		JOptionPane.showMessageDialog( null, "Tests par teksta datnçm","Ziòa", JOptionPane.INFORMATION_MESSAGE);
 		
 		String[] options0 = {"OK"};
 		JPanel panel = new JPanel();
-		JLabel lbl = new JLabel("Ievadi savu vârdu: ");
+		JLabel lbl = new JLabel("Enter Your name: ");
 		JTextField txt = new JTextField(10);
 		panel.add(lbl);
 		panel.add(txt);
-		int selectedOption = JOptionPane.showOptionDialog(null, panel, "Ziòa", JOptionPane.NO_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options0 , options0[0]);
+		int selectedOption = JOptionPane.showOptionDialog(null, panel, "The Title", JOptionPane.NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options0 , options0[0]);
 
 		if(selectedOption == 0)
 		{
-		    String atbilde = txt.getText();
-		    try {
-			      FileWriter myObj = new FileWriter("Atbildes.txt",true);
-			      myObj.write("\n============================");
-			      myObj.write("\n"+atbilde+"\r\n");
-			      myObj.close();
-			      System.out.println("Successfully wrote to the file.");
-			    } catch (IOException e) {
-			      System.out.println("An error occurred.");
-			      e.printStackTrace();
-			    }
+		    String text = txt.getText();
+		    // ...
 		}
-		if(selectedOption == JOptionPane.CLOSED_OPTION) {
-			System. exit(1);
-		}
-		
-		
+		JOptionPane.showMessageDialog( null, "Tests par teksta datnçm","Ziòa", JOptionPane.INFORMATION_MESSAGE);
+		atbilde = JOptionPane.showInputDialog( null, "Ievadi savu vârdu","Ziòa", JOptionPane.INFORMATION_MESSAGE);
 		  
 
-	
+		try {
+		      FileWriter myObj = new FileWriter("Atbildes.txt",true);
+		      myObj.write("\n============================");
+		      myObj.write("\n"+atbilde+"\r\n");
+		      myObj.close();
+		      System.out.println("Successfully wrote to the file.");
+		    } catch (IOException e) {
+		      System.out.println("An error occurred.");
+		      e.printStackTrace();
+		    }
+		
 		
 		
 		

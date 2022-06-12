@@ -51,10 +51,7 @@ public class Programma {
 			      e.printStackTrace();
 			    }
 		}
-		if(selectedOption == JOptionPane.CLOSED_OPTION) {
-			System. exit(1);
-		}
-		
+		JOptionPane.showMessageDialog( null, "Tests par teksta datnçm","Ziòa", JOptionPane.INFORMATION_MESSAGE);
 		
 		  
 

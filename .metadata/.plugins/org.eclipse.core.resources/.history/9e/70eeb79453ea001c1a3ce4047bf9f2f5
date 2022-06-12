@@ -51,9 +51,6 @@ public class Programma {
 			      e.printStackTrace();
 			    }
 		}
-		if(selectedOption == JOptionPane.CLOSED_OPTION) {
-			System. exit(1);
-		}
 		
 		
 		  
