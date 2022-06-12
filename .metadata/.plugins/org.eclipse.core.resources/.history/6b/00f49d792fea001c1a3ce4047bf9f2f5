@@ -51,11 +51,11 @@ public class Programma {
 			    }
 			    
 			    
-			    String[] options2 = new String[] {"File myObj = new File(\"file.txt\");", "new File = File myObj(\"file.txt\");", "File myObj = (\"file.txt\");", "new File = myObj (\"file.txt\");"};
-				 int response2 = JOptionPane.showOptionDialog(null, "Java kods, lai izveidotu failu \"file.txt\", ir ...", "3)Jautâjums",
+			    String[] options2 = new String[] {"File myObj = new File(\"file.txt\");", "new File = File myObj(\"file.txt\");", "canWrite()", "list()"};
+				 int response2 = JOptionPane.showOptionDialog(null, "Ar kâdu metodi var atgriezt virkòu masîvu, kas nosauc direktorijâ esoðos failus un direktorijus.", "2)Jautâjums",
 				        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
-				        null, options2, options2[0]);
-				    if(response2 == 0) {
+				        null, options1, options1[0]);
+				    if(response1 == 3) {
 				    	JOptionPane.showMessageDialog( null, "Pareizi");
 				    	p=p+1;
 				    }
