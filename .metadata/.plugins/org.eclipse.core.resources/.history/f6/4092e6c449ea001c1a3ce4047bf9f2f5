@@ -208,7 +208,7 @@ public class Programma {
 					    	a=a+1;
 					    }
 					    
-					    String[] options9 = new String[] {"Paâtrina datu ielasîðanu", "nolasa datus no datnes", "Formatç izvadâmo datu plûsmu", "ieraksta datnç"};
+					    String[] options9 = new String[] {"ieraksta datnç", "nolasa datus no datnes", "Formatç izvadâmo datu plûsmu", "Paâtrina datu ielasîðanu"};
 					    int response9 = JOptionPane.showOptionDialog(null, "Ko dara klase PrintWriter?", "10)Jautâjums",
 					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 					        null, options9, options9[0]);

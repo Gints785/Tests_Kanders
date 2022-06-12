@@ -189,43 +189,8 @@ public class Programma {
 					    }
 					    
 					    
-					    String[] options8 = new String[] {"ieraksta datnç", "Formatç izvadâmo datu plûsmu", "nolasa datus no datnes", "Paâtrina datu ielasîðanu"};
-					    int response8 = JOptionPane.showOptionDialog(null, "Ko dara klase Bufferedreader?", "9)Jautâjums",
-					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
-					        null, options8, options8[0]);
-					    if (response8 == JOptionPane.CLOSED_OPTION) {
-					    	JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
-					    	 System. exit(1);
-				        } 
-					    if(response8 == 3) {
-					    	JOptionPane.showMessageDialog( null, "Pareizi");
-					    	p=p+1;
-					    	a=a+1;
-					    }
-					    else {
-					    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
-					    	n=n+1;
-					    	a=a+1;
-					    }
 					    
-					    String[] options9 = new String[] {"Paâtrina datu ielasîðanu", "nolasa datus no datnes", "Formatç izvadâmo datu plûsmu", "ieraksta datnç"};
-					    int response9 = JOptionPane.showOptionDialog(null, "Ko dara klase PrintWriter?", "10)Jautâjums",
-					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
-					        null, options9, options9[0]);
-					    if (response9 == JOptionPane.CLOSED_OPTION) {
-					    	JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
-					    	 System. exit(1);
-				        } 
-					    if(response9 == 2) {
-					    	JOptionPane.showMessageDialog( null, "Pareizi");
-					    	p=p+1;
-					    	a=a+1;
-					    }
-					    else {
-					    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
-					    	n=n+1;
-					    	a=a+1;
-					    }
+					    
 					    
 			    
 			    
