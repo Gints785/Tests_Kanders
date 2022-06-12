@@ -169,15 +169,15 @@ public class Programma {
 					    
 					    
 					    
-					    String[] options7 = new String[] {"integer", "Float", "Tikai tekstu", "String"};
-					    int response7 = JOptionPane.showOptionDialog(null, "Ko var ierakstît failos?", "8)Jautâjums",
+					    String[] options7 = new String[] {"length()", "getName()", "getAbsolutePath()", "list()"};
+					    int response7 = JOptionPane.showOptionDialog(null, "Ar kuru metodi var uzzinât faila lielumu baitos?", "8)Jautâjums",
 					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 					        null, options7, options7[0]);
 					    if (response7 == JOptionPane.CLOSED_OPTION) {
 					    	JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
 					    	 System. exit(1);
 				        } 
-					    if(response7 == 3) {
+					    if(response7 == 0) {
 					    	JOptionPane.showMessageDialog( null, "Pareizi");
 					    	p=p+1;
 					    	a=a+1;
