@@ -37,11 +37,7 @@ public class Programma {
 		panel.add(txt);
 		int selectedOption = JOptionPane.showOptionDialog(null, panel, "Ziòa", JOptionPane.NO_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options0 , options0[0]);
 
-		if(selectedOption == JOptionPane.CLOSED_OPTION) {
-			System. exit(1);
-		}
 		if(selectedOption == 0)
-			
 		{
 		    String atbilde = txt.getText();
 		    try {
@@ -55,7 +51,9 @@ public class Programma {
 			      e.printStackTrace();
 			    }
 		}
-	
+		if(selectedOption == JOptionPane.CLOSED_OPTION) {
+			System. exit(1);
+		}
 		
 		
 		  
