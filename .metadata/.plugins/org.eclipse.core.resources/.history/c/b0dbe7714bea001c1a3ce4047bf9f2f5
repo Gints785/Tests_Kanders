@@ -28,8 +28,8 @@ public class Programma {
 
 		try {
 		      FileWriter myObj = new FileWriter("Atbildes.txt");
-		      myObj.write("\n"+atbilde+"\n");
-		      myObj.close();
+		      myObj.write(atbilde);
+		     
 		      System.out.println("Successfully wrote to the file.");
 		    } catch (IOException e) {
 		      System.out.println("An error occurred.");

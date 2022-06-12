@@ -1,7 +1,6 @@
 package swing.demo.dialogBox;
 import javax.swing.JOptionPane;
 import java.io.File; 
-import java.io.FileWriter; 
 import java.io.IOException;
 
 public class Programma {
@@ -9,7 +8,6 @@ public class Programma {
 	public static void main(String[] args) {
 		
 		int p = 0,n = 0,a=0;
-		String atbilde;
 		
 		try {
 		      File myObj = new File("Atbildes.txt");
@@ -23,21 +21,6 @@ public class Programma {
 		      e.printStackTrace();
 		    }
 		JOptionPane.showMessageDialog( null, "Tests par teksta datnçm","Ziòa", JOptionPane.INFORMATION_MESSAGE);
-		atbilde = JOptionPane.showInputDialog( null, "Ievadi savu vârdu","Ziòa", JOptionPane.INFORMATION_MESSAGE);
-		
-
-		try {
-		      FileWriter myObj = new FileWriter("Atbildes.txt");
-		      myObj.write("\n"+atbilde+"\n");
-		      myObj.close();
-		      System.out.println("Successfully wrote to the file.");
-		    } catch (IOException e) {
-		      System.out.println("An error occurred.");
-		      e.printStackTrace();
-		    }
-		
-		
-		
 		
 		
 		 String[] options = new String[] {"canExecute()", "canRead()", "canWrite()", "getName()"};

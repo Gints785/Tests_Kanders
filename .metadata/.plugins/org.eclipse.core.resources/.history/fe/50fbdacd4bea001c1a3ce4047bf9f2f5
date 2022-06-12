@@ -28,7 +28,7 @@ public class Programma {
 
 		try {
 		      FileWriter myObj = new FileWriter("Atbildes.txt");
-		      myObj.write("\n"+atbilde+"\n");
+		      myObj.write("\n"+atbilde);
 		      myObj.close();
 		      System.out.println("Successfully wrote to the file.");
 		    } catch (IOException e) {
