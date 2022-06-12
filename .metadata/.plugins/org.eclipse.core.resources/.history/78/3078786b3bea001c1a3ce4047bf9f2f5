@@ -87,7 +87,7 @@ public class Programma {
 					    int response4 = JOptionPane.showOptionDialog(null, "Ar kâdu metodi var izveidot direktoriju?", "1)Jautâjums",
 					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 					        null, options4, options4[0]);
-					    if(response4 == 3) {
+					    if(response4 == 1) {
 					    	JOptionPane.showMessageDialog( null, "Pareizi");
 					    	p=p+1;
 					    }

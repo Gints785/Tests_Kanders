@@ -64,14 +64,12 @@ public class Programma {
 				    	n=n+1;
 				    }
 				    
-				    String[] options3 = new String[] {" FileWriter Writer = new FileWriter(\"name.txt\");\r\n"+ "",
-				    								  " FileWriter myWriter = new FileWrter(\"filename.txt\");\r\n"+ "",
-				    		                          " FileWriter File = new FileWriter(\"name.txt\");\r\n"+ "",
-				    		                          " FileWriter myWriter = new FileWriter(\"File.txt\");\r\n"+ ""};
-					 int response3 = JOptionPane.showOptionDialog(null, "Kurð no dotajiem variantiem nav pareizs?", "4)Jautâjums",
+				    String[] options3 = new String[] {" FileWriter myWriter = new FileWriter(\"filename.txt\");\r\n"
+				    		+ ";", "new File = File myObj(\"file.txt\");", "File myObj = (\"file.txt\");", "new File = myObj (\"file.txt\");"};
+					 int response3 = JOptionPane.showOptionDialog(null, "Java kods, lai izveidotu failu \"file.txt\", ir ...", "3)Jautâjums",
 					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 					        null, options3, options3[0]);
-					    if(response3  == 1) {
+					    if(response3  == 0) {
 					    	JOptionPane.showMessageDialog( null, "Pareizi");
 					    	p=p+1;
 					    }
@@ -79,25 +77,6 @@ public class Programma {
 					    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
 					    	n=n+1;
 					    }
-					    
-					    
-					    
-					    
-					    String[] options4 = new String[] {"canWrite()", "getName()", "createNewFile()", "mkdir()"};
-					    int response4 = JOptionPane.showOptionDialog(null, "Ar kâdu metodi var izveidot direktoriju?", "1)Jautâjums",
-					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
-					        null, options4, options4[0]);
-					    if(response4 == 3) {
-					    	JOptionPane.showMessageDialog( null, "Pareizi");
-					    	p=p+1;
-					    }
-					    else {
-					    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
-					    	n=n+1;
-					    }
-					    
-					    
-					    
 			    
 			    
 			    

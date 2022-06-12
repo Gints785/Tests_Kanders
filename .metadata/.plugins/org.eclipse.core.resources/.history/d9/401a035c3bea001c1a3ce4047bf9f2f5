@@ -68,7 +68,7 @@ public class Programma {
 				    								  " FileWriter myWriter = new FileWrter(\"filename.txt\");\r\n"+ "",
 				    		                          " FileWriter File = new FileWriter(\"name.txt\");\r\n"+ "",
 				    		                          " FileWriter myWriter = new FileWriter(\"File.txt\");\r\n"+ ""};
-					 int response3 = JOptionPane.showOptionDialog(null, "Kurð no dotajiem variantiem nav pareizs?", "4)Jautâjums",
+					 int response3 = JOptionPane.showOptionDialog(null, "Kurð no dotajiem variantiem nav pareizs", "4)Jautâjums",
 					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 					        null, options3, options3[0]);
 					    if(response3  == 1) {
@@ -83,11 +83,11 @@ public class Programma {
 					    
 					    
 					    
-					    String[] options4 = new String[] {"canWrite()", "getName()", "createNewFile()", "mkdir()"};
-					    int response4 = JOptionPane.showOptionDialog(null, "Ar kâdu metodi var izveidot direktoriju?", "1)Jautâjums",
+					    String[] options4 = new String[] {"canExecute()", "canRead()", "canWrite()", "getName()"};
+					    int response4 = JOptionPane.showOptionDialog(null, "Ar kâdu metodi var pârbaudît, vai lietojumprogramma var nolasît failu, kas apzîmçts ar ðo abstrakto ceïa nosaukumu?", "1)Jautâjums",
 					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 					        null, options4, options4[0]);
-					    if(response4 == 3) {
+					    if(response4 == 1) {
 					    	JOptionPane.showMessageDialog( null, "Pareizi");
 					    	p=p+1;
 					    }
