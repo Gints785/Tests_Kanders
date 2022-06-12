@@ -47,6 +47,7 @@ public class Programma {
 			        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 			        null, options1, options1[0]);
 			 if (response1 == JOptionPane.CLOSED_OPTION) {
+		    	
 		    	 JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
 		    	 System. exit(1);
 	        }
@@ -67,7 +68,6 @@ public class Programma {
 				        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 				        null, options2, options2[0]);
 				 if (response2 == JOptionPane.CLOSED_OPTION) {
-					 JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
 			    	 System. exit(1);
 		        } 
 				    if(response2 == 0) {
@@ -89,7 +89,6 @@ public class Programma {
 					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 					        null, options3, options3[0]);
 					 if (response3 == JOptionPane.CLOSED_OPTION) {
-						 JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
 				    	 System. exit(1);
 			        } 
 					    if(response3  == 1) {
@@ -111,7 +110,6 @@ public class Programma {
 					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 					        null, options4, options4[0]);
 					    if (response4 == JOptionPane.CLOSED_OPTION) {
-					    	JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
 					    	 System. exit(1);
 				        } 
 					    if(response4 == 3) {
@@ -131,7 +129,6 @@ public class Programma {
 					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 					        null, options5, options5[0]);
 					    if (response5 == JOptionPane.CLOSED_OPTION) {
-					    	JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
 					    	 System. exit(1);
 				        } 
 					    if(response5 == 2) {
@@ -152,7 +149,6 @@ public class Programma {
 					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 					        null, options6, options6[0]);
 					    if (response6 == JOptionPane.CLOSED_OPTION) {
-					    	JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
 					    	 System. exit(1);
 				        } 
 					    if(response6 == 0) {
@@ -174,7 +170,6 @@ public class Programma {
 					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 					        null, options7, options7[0]);
 					    if (response7 == JOptionPane.CLOSED_OPTION) {
-					    	JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
 					    	 System. exit(1);
 				        } 
 					    if(response7 == 0) {

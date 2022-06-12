@@ -7,7 +7,7 @@ public class Programma {
 
 	public static void main(String[] args) {
 		
-		int p = 0,n = 0,a=0;
+		int p = 0,n = 0;
 		
 		try {
 		      File myObj = new File("Atbildes.txt");
@@ -27,38 +27,27 @@ public class Programma {
 		    int response = JOptionPane.showOptionDialog(null, "Ar kâdu metodi var pârbaudît, vai lietojumprogramma var nolasît failu, kas apzîmçts ar ðo abstrakto ceïa nosaukumu?", "1)Jautâjums",
 		        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 		        null, options, options[0]);
-		    if (response == JOptionPane.CLOSED_OPTION) {
-		    	 System. exit(1);
-	        } 
-		    
 		    if(response == 1) {
 		    	JOptionPane.showMessageDialog( null, "Pareizi");
 		    	p=p+1;
-		    	a=a+1;
 		    }
 		    else {
 		    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
 		    	n=n+1;
-		    	a=a+1;
 		    }
-		   
+		    
+		    
 		 String[] options1 = new String[] {"getPath()", "canExecute()", "canWrite()", "list()"};
 			 int response1 = JOptionPane.showOptionDialog(null, "Ar kâdu metodi var atgriezt virkòu masîvu, kas nosauc direktorijâ esoðos failus un direktorijus.", "2)Jautâjums",
 			        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 			        null, options1, options1[0]);
-			 if (response1 == JOptionPane.CLOSED_OPTION) {
-		    	 JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
-		    	 System. exit(1);
-	        }
 			    if(response1 == 3) {
 			    	JOptionPane.showMessageDialog( null, "Pareizi");
 			    	p=p+1;
-			    	a=a+1;
 			    }
 			    else {
 			    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
 			    	n=n+1;
-			    	a=a+1;
 			    }
 			    
 			    
@@ -66,19 +55,13 @@ public class Programma {
 				 int response2 = JOptionPane.showOptionDialog(null, "Java kods, lai izveidotu failu \"file.txt\", ir ...", "3)Jautâjums",
 				        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 				        null, options2, options2[0]);
-				 if (response2 == JOptionPane.CLOSED_OPTION) {
-					 JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
-			    	 System. exit(1);
-		        } 
 				    if(response2 == 0) {
 				    	JOptionPane.showMessageDialog( null, "Pareizi");
 				    	p=p+1;
-				    	a=a+1;
 				    }
 				    else {
 				    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
 				    	n=n+1;
-				    	a=a+1;
 				    }
 				    
 				    String[] options3 = new String[] {" FileWriter Writer = new FileWriter(\"name.txt\");\r\n"+ "",
@@ -88,105 +71,47 @@ public class Programma {
 					 int response3 = JOptionPane.showOptionDialog(null, "Kurð no dotajiem variantiem nav pareizs?", "4)Jautâjums",
 					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 					        null, options3, options3[0]);
-					 if (response3 == JOptionPane.CLOSED_OPTION) {
-						 JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
-				    	 System. exit(1);
-			        } 
 					    if(response3  == 1) {
 					    	JOptionPane.showMessageDialog( null, "Pareizi");
 					    	p=p+1;
-					    	a=a+1;
 					    }
 					    else {
 					    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
 					    	n=n+1;
-					    	a=a+1;
 					    }
 					    
 					    
 					    
 					    
 					    String[] options4 = new String[] {"canWrite()", "getName()", "createNewFile()", "mkdir()"};
-					    int response4 = JOptionPane.showOptionDialog(null, "Ar kâdu metodi var izveidot direktoriju?", "5)Jautâjums",
+					    int response4 = JOptionPane.showOptionDialog(null, "Ar kâdu metodi var izveidot direktoriju?", "1)Jautâjums",
 					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 					        null, options4, options4[0]);
-					    if (response4 == JOptionPane.CLOSED_OPTION) {
-					    	JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
-					    	 System. exit(1);
-				        } 
 					    if(response4 == 3) {
 					    	JOptionPane.showMessageDialog( null, "Pareizi");
 					    	p=p+1;
-					    	a=a+1;
 					    }
 					    else {
 					    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
 					    	n=n+1;
-					    	a=a+1;
 					    }
 					    
 					    
 					    String[] options5 = new String[] {"string", "long", "boolean", "int"};
-					    int response5 = JOptionPane.showOptionDialog(null, "Kads tips ir metodei canWrite?", "6)Jautâjums",
+					    int response5 = JOptionPane.showOptionDialog(null, "Kads tips ir metodei canWrite?", "1)Jautâjums",
 					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 					        null, options5, options5[0]);
-					    if (response5 == JOptionPane.CLOSED_OPTION) {
-					    	JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
-					    	 System. exit(1);
-				        } 
 					    if(response5 == 2) {
 					    	JOptionPane.showMessageDialog( null, "Pareizi");
 					    	p=p+1;
-					    	a=a+1;
 					    }
 					    else {
 					    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
 					    	n=n+1;
-					    	a=a+1;
 					    }
 					    
 					    
 					    
-					    String[] options6 = new String[] {"length()", "getName()", "getAbsolutePath()", "list()"};
-					    int response6 = JOptionPane.showOptionDialog(null, "Ar kuru metodi var uzzinât faila lielumu baitos?", "7)Jautâjums",
-					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
-					        null, options6, options6[0]);
-					    if (response6 == JOptionPane.CLOSED_OPTION) {
-					    	JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
-					    	 System. exit(1);
-				        } 
-					    if(response6 == 0) {
-					    	JOptionPane.showMessageDialog( null, "Pareizi");
-					    	p=p+1;
-					    	a=a+1;
-					    }
-					    else {
-					    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
-					    	n=n+1;
-					    	a=a+1;
-					    }
-					    
-					    
-					    
-					    
-					    String[] options7 = new String[] {"length()", "getName()", "getAbsolutePath()", "list()"};
-					    int response7 = JOptionPane.showOptionDialog(null, "Ar kuru metodi var uzzinât faila lielumu baitos?", "8)Jautâjums",
-					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
-					        null, options7, options7[0]);
-					    if (response7 == JOptionPane.CLOSED_OPTION) {
-					    	JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
-					    	 System. exit(1);
-				        } 
-					    if(response7 == 0) {
-					    	JOptionPane.showMessageDialog( null, "Pareizi");
-					    	p=p+1;
-					    	a=a+1;
-					    }
-					    else {
-					    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
-					    	n=n+1;
-					    	a=a+1;
-					    }
 					    
 					    
 					    
@@ -196,7 +121,7 @@ public class Programma {
 			    
 			    
 			    
-			    JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no 10 jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
+			    JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+"\nNepareizi atbildçti - "+n,"Rezultâts",JOptionPane.INFORMATION_MESSAGE);
 			    
 			    
 			    

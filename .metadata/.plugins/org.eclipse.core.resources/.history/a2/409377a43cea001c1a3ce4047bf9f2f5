@@ -1,0 +1,118 @@
+package swing.demo.dialogBox;
+import javax.swing.JOptionPane;
+import java.io.File; 
+import java.io.IOException;
+
+public class Programma {
+
+	public static void main(String[] args) {
+		
+		int p = 0,n = 0;
+		
+		try {
+		      File myObj = new File("Atbildes.txt");
+		      if (myObj.createNewFile()) {
+		        System.out.println("Fails izveidots: " + myObj.getName());
+		      } else {
+		        System.out.println("Fails jau pastâv.");
+		      }
+		    } catch (IOException e) {
+		      System.out.println("Kïume.");
+		      e.printStackTrace();
+		    }
+		JOptionPane.showMessageDialog( null, "Tests par teksta datnçm","Ziòa", JOptionPane.INFORMATION_MESSAGE);
+		
+		
+		 String[] options = new String[] {"canExecute()", "canRead()", "canWrite()", "getName()"};
+		    int response = JOptionPane.showOptionDialog(null, "Ar kâdu metodi var pârbaudît, vai lietojumprogramma var nolasît failu, kas apzîmçts ar ðo abstrakto ceïa nosaukumu?", "1)Jautâjums",
+		        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
+		        null, options, options[0]);
+		    if(response == 1) {
+		    	JOptionPane.showMessageDialog( null, "Pareizi");
+		    	p=p+1;
+		    }
+		    else {
+		    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
+		    	n=n+1;
+		    }
+		    
+		    
+		 String[] options1 = new String[] {"getPath()", "canExecute()", "canWrite()", "list()"};
+			 int response1 = JOptionPane.showOptionDialog(null, "Ar kâdu metodi var atgriezt virkòu masîvu, kas nosauc direktorijâ esoðos failus un direktorijus.", "2)Jautâjums",
+			        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
+			        null, options1, options1[0]);
+			    if(response1 == 3) {
+			    	JOptionPane.showMessageDialog( null, "Pareizi");
+			    	p=p+1;
+			    }
+			    else {
+			    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
+			    	n=n+1;
+			    }
+			    
+			    
+			    String[] options2 = new String[] {"File myObj = new File(\"file.txt\");", "new File = File myObj(\"file.txt\");", "File myObj = (\"file.txt\");", "new File = myObj (\"file.txt\");"};
+				 int response2 = JOptionPane.showOptionDialog(null, "Java kods, lai izveidotu failu \"file.txt\", ir ...", "3)Jautâjums",
+				        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
+				        null, options2, options2[0]);
+				    if(response2 == 0) {
+				    	JOptionPane.showMessageDialog( null, "Pareizi");
+				    	p=p+1;
+				    }
+				    else {
+				    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
+				    	n=n+1;
+				    }
+				    
+				    String[] options3 = new String[] {" FileWriter Writer = new FileWriter(\"name.txt\");\r\n"+ "",
+				    								  " FileWriter myWriter = new FileWrter(\"filename.txt\");\r\n"+ "",
+				    		                          " FileWriter File = new FileWriter(\"name.txt\");\r\n"+ "",
+				    		                          " FileWriter myWriter = new FileWriter(\"File.txt\");\r\n"+ ""};
+					 int response3 = JOptionPane.showOptionDialog(null, "Kurð no dotajiem variantiem nav pareizs?", "4)Jautâjums",
+					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
+					        null, options3, options3[0]);
+					    if(response3  == 1) {
+					    	JOptionPane.showMessageDialog( null, "Pareizi");
+					    	p=p+1;
+					    }
+					    else {
+					    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
+					    	n=n+1;
+					    }
+					    
+					    
+					    
+					    
+					    String[] options4 = new String[] {"canWrite()", "getName()", "createNewFile()", "mkdir()"};
+					    int response4 = JOptionPane.showOptionDialog(null, "Ar kâdu metodi var izveidot direktoriju?", "1)Jautâjums",
+					        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
+					        null, options4, options4[0]);
+					    if(response4 == 3) {
+					    	JOptionPane.showMessageDialog( null, "Pareizi");
+					    	p=p+1;
+					    }
+					    else {
+					    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
+					    	n=n+1;
+					    }
+					    
+					    
+					    
+			    
+			    
+			    
+			    
+			    JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+"\nNepareizi atbildçti - "+n,"Rezultâts",JOptionPane.INFORMATION_MESSAGE);
+			    
+			    
+			    
+			    
+			    
+			    
+			    
+			    
+			    
+		
+	}
+
+}
