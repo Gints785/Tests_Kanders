@@ -28,7 +28,6 @@ public class Programma {
 
 		try {
 		      FileWriter myObj = new FileWriter("Atbildes.txt",true);
-		      myObj.write("\n============================");
 		      myObj.write("\n"+atbilde+"\r\n");
 		      myObj.close();
 		      System.out.println("Successfully wrote to the file.");
@@ -46,7 +45,6 @@ public class Programma {
 		        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 		        null, options, options[0]);
 		    if (response == JOptionPane.CLOSED_OPTION) {
-		    	
 		    	 System. exit(1);
 	        } 
 		    

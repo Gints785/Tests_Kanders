@@ -1,2 +1,31 @@
+tests1
+Pareizi atbildçti - 1
+Nepareizi atbildçti - 0
+ No - 1 jautâjumiemtests2
+Pareizi atbildçti - 0
+Nepareizi atbildçti - 1
+ No - 1 jautâjumiem
+tests3
+Pareizi atbildçti - 1
+Nepareizi atbildçti - 0
+ No - 1 jautâjumiem
+============================
 
-null
+tests4
+Pareizi atbildçti - 1
+Nepareizi atbildçti - 0
+ No - 1 jautâjumiem
+============================
+
+tests5
+
+============================
+tests6
+Pareizi atbildçti - 1
+Nepareizi atbildçti - 0
+ No - 1 jautâjumiem
+============================
+tests7
+Pareizi atbildçti - 0
+Nepareizi atbildçti - 1
+ No - 1 jautâjumiem

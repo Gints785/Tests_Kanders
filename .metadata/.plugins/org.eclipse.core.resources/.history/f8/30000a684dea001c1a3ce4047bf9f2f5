@@ -27,9 +27,8 @@ public class Programma {
 		
 
 		try {
-		      FileWriter myObj = new FileWriter("Atbildes.txt",true);
-		      myObj.write("\n============================");
-		      myObj.write("\n"+atbilde+"\r\n");
+		      FileWriter myObj = new FileWriter("Atbildes.txt");
+		      myObj.write(atbilde+"\r\n");
 		      myObj.close();
 		      System.out.println("Successfully wrote to the file.");
 		    } catch (IOException e) {
@@ -46,7 +45,6 @@ public class Programma {
 		        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
 		        null, options, options[0]);
 		    if (response == JOptionPane.CLOSED_OPTION) {
-		    	
 		    	 System. exit(1);
 	        } 
 		    
@@ -67,16 +65,6 @@ public class Programma {
 			        null, options1, options1[0]);
 			 if (response1 == JOptionPane.CLOSED_OPTION) {
 		    	 JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+" no "+a+" jautâjumiem - ","Rezultâts",JOptionPane.INFORMATION_MESSAGE);
-
-		 		try {
-		 		      FileWriter myObj = new FileWriter("Atbildes.txt",true);
-		 		      myObj.write("Pareizi atbildçti - "+p+"\nNepareizi atbildçti - "+n+"\n No - "+a+" jautâjumiem");
-		 		      myObj.close();
-		 		      System.out.println("Successfully wrote to the file.");
-		 		    } catch (IOException e) {
-		 		      System.out.println("An error occurred.");
-		 		      e.printStackTrace();
-		 		    }
 		    	 System. exit(1);
 	        }
 			    if(response1 == 3) {
