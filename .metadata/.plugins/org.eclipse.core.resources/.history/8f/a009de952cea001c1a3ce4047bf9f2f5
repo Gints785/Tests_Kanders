@@ -54,7 +54,7 @@ public class Programma {
 			    
 			    
 			    
-			    JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+"\nNepareizi atbildçti - "+n,"Rezultâts",JOptionPane.INFORMATION_MESSAGE);
+			    JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+"\nNepareizi atbildçti - "+n,"Ziòa",JOptionPane.INFORMATION_MESSAGE);
 			    
 			    
 			    

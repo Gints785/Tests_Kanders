@@ -6,9 +6,6 @@ import java.io.IOException;
 public class Programma {
 
 	public static void main(String[] args) {
-		
-		int p = 0,n = 0;
-		
 		try {
 		      File myObj = new File("Atbildes.txt");
 		      if (myObj.createNewFile()) {
@@ -29,11 +26,9 @@ public class Programma {
 		        null, options, options[0]);
 		    if(response == 1) {
 		    	JOptionPane.showMessageDialog( null, "Pareizi");
-		    	p=p+1;
 		    }
 		    else {
 		    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
-		    	n=n+1;
 		    }
 		    
 		    
@@ -43,18 +38,17 @@ public class Programma {
 			        null, options1, options1[0]);
 			    if(response1 == 3) {
 			    	JOptionPane.showMessageDialog( null, "Pareizi");
-			    	p=p+1;
 			    }
 			    else {
 			    	JOptionPane.showMessageDialog( null, "Nepareizi","Ziòa",JOptionPane.ERROR_MESSAGE);
-			    	n=n+1;
+			    	
 			    }
 			    
 			    
 			    
 			    
 			    
-			    JOptionPane.showMessageDialog( null,"Pareizi atbildçti - "+p+"\nNepareizi atbildçti - "+n,"Rezultâts",JOptionPane.INFORMATION_MESSAGE);
+			    
 			    
 			    
 			    
